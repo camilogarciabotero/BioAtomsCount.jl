@@ -1,6 +1,6 @@
 using Test
-using BioAtomCount
+using BioAtomsCount
 
-@testset "BioAtomCount.jl" begin
+@testset "BioAtomsCount.jl" begin
     @test 1 == 1
-end # BioAtomCount.jl tests
+end # BioAtomsCount.jl tests

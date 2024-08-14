@@ -1,14 +1,14 @@
 ```@meta
-CurrentModule = BioAtomCount
+CurrentModule = BioAtomsCount
 ```
 
-# BioAtomCount
+# BioAtomsCount
 
-Documentation for [BioAtomCount](https://github.com/Camilo García/BioAtomCount.jl).
+Documentation for [BioAtomsCount](https://github.com/Camilo García/BioAtomsCount.jl).
 
 ```@index
 ```
 
 ```@autodocs
-Modules = [BioAtomCount]
+Modules = [BioAtomsCount]
 ```

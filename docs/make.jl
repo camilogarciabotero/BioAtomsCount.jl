@@ -1,21 +1,21 @@
 using Documenter
-using BioAtomCount
+using BioAtomsCount
 using DocThemeIndigo
 
 indigo = DocThemeIndigo.install(Configurations)
 
 makedocs(;
-    modules = [BioAtomCount],
+    modules = [BioAtomsCount],
     format = Documenter.HTML(
         prettyurls = !("local" in ARGS),
-        canonical="https://camilogarciabotero.github.io/BioAtomCount.jl",
+        canonical="https://camilogarciabotero.github.io/BioAtomsCount.jl",
         assets=String[indigo],
     ),
     pages = [
         "Home" => "index.md",
     ],
-    repo = "https://github.com/camilogarciabotero/BioAtomCount.jl",
-    sitename = "BioAtomCount.jl",
+    repo = "https://github.com/camilogarciabotero/BioAtomsCount.jl",
+    sitename = "BioAtomsCount.jl",
 )
 
-deploydocs(; repo = "https://github.com/camilogarciabotero/BioAtomCount.jl")
+deploydocs(; repo = "https://github.com/camilogarciabotero/BioAtomsCount.jl")
