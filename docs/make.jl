@@ -1,21 +1,20 @@
 using Documenter
 using BioAtomsCount
-using DocThemeIndigo
 
-indigo = DocThemeIndigo.install(Configurations)
+DocMeta.setdocmeta!(BioAtomsCount, :DocTestSetup, :(using BioAtomsCount); recursive = true)
 
 makedocs(;
     modules = [BioAtomsCount],
+    authors = "Camilo García-Botero",
+    repo = "https://github.com/camilogarciabotero/BioAtomsCount.jl",
+    sitename = "BioAtomsCount.jl",
     format = Documenter.HTML(
-        prettyurls = !("local" in ARGS),
         canonical="https://camilogarciabotero.github.io/BioAtomsCount.jl",
-        assets=String[indigo],
     ),
     pages = [
         "Home" => "index.md",
     ],
-    repo = "https://github.com/camilogarciabotero/BioAtomsCount.jl",
-    sitename = "BioAtomsCount.jl",
+    warnonly = true,
 )
 
-deploydocs(; repo = "https://github.com/camilogarciabotero/BioAtomsCount.jl")
+deploydocs(; repo = "https://github.com/camilogarciabotero/BioAtomsCount.jl", devbranch = "main")
