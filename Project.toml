@@ -1,9 +1,10 @@
 name = "BioAtomCount"
 uuid = "85ca2092-e647-4015-bc79-36f358be2fb1"
-authors = ["Camilo García<ca.garcia2@uniandes.edu.co>",]
+authors = ["Camilo García-Botero<ca.garcia2@uniandes.edu.co>"]
 version = "0.1.0"
 
 [deps]
+BioSequences = "7e6ae17a-c86d-528c-b3b9-7f778a29fe59"
 
 [compat]
 julia = "1.10"
