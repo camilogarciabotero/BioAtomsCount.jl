@@ -4,22 +4,9 @@ CurrentModule = BioAtomsCount
 
 # BioAtomsCount
 
-
 This is a *fast* and *lightweight* package that counts the number of atoms in a given `BioSequence` object. It was inspired by the [Biocost.jl](https://github.com/juanvillada/Biocost.jl/tree/main) package.
 
 ## Installation
-
-<p>
-BioAtomsCount is a &nbsp;
-    <a href="https://julialang.org">
-        <img src="https://raw.githubusercontent.com/JuliaLang/julia-logo-graphics/master/images/julia.ico" width="16em">
-        Julia Language
-    </a>
-    &nbsp; package. To install BioAtomsCount,
-    please <a href="https://docs.julialang.org/en/v1/manual/getting-started/">open
-    Julia's interactive session (known as REPL)</a> and press <kbd>]</kbd>
-    key in the REPL to use the package mode, then type the following command
-</p>
 
 ```julia
 pkg> add BioAtomsCount
@@ -82,8 +69,3 @@ countatoms(lambdaprotein)
 ## License
 
 MIT License
-
-
-```@autodocs
-Modules = [BioAtomsCount]
-```
