@@ -1,6 +1,6 @@
 module BioAtomsCount
 
-export atomcount
+export atomscount
 
 using BioSequences: 
   ACGT, DNA, SeqOrView,
@@ -40,9 +40,9 @@ const aaweights = [
 
 const AAs = (AA_A, AA_R, AA_N, AA_D, AA_C, AA_Q, AA_E, AA_G, AA_H, AA_I, AA_L, AA_K, AA_M, AA_F, AA_P, AA_S, AA_T, AA_W, AA_Y, AA_V)
 
-function atomcount(seq::SeqOrView{A})::Matrix{Int64} where {A}
+function atomscount(seq::SeqOrView{A})::Matrix{Int64} where {A}
     atomweights, alph = eltype(seq) == DNA ? (dnaweights, ACGT) : (aaweights,AAs)
-    counts =  [count(x, seq) for x in isequal.(alph)]::Vector{Int64} #values(count_kmers(seq, 1))
+    counts = [count(x, seq) for x in isequal.(alph)]::Vector{Int64} #values(count_kmers(seq, 1))
     return atomweights .* counts
 end
 
