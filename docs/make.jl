@@ -8,14 +8,14 @@ makedocs(;
     modules = [BioAtomCount],
     format = Documenter.HTML(
         prettyurls = !("local" in ARGS),
-        canonical="https://Camilo García.github.io/BioAtomCount.jl",
+        canonical="https://camilogarciabotero.github.io/BioAtomCount.jl",
         assets=String[indigo],
     ),
     pages = [
         "Home" => "index.md",
     ],
-    repo = "https://github.com/Camilo García/BioAtomCount.jl",
+    repo = "https://github.com/camilogarciabotero/BioAtomCount.jl",
     sitename = "BioAtomCount.jl",
 )
 
-deploydocs(; repo = "https://github.com/Camilo García/BioAtomCount.jl")
+deploydocs(; repo = "https://github.com/camilogarciabotero/BioAtomCount.jl")
