@@ -1,6 +1,6 @@
 # BioAtomsCount
 
-This is a *fast* and *lightweight* package that counts the number of atoms in a given `BioSequence` object. It was inspired by the [Biocost.jl](https://github.com/juanvillada/Biocost.jl/tree/main) package.
+WThis is a *fast* and *lightweight* package that counts the number of atoms in a given `BioSequence` object. It was inspired by the [Biocost.jl](https://github.com/juanvillada/Biocost.jl/tree/main) package.
 
 ## Installation
 
