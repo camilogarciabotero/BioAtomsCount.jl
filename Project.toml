@@ -7,4 +7,5 @@ version = "0.1.0"
 BioSequences = "7e6ae17a-c86d-528c-b3b9-7f778a29fe59"
 
 [compat]
+BioSequences = "3"
 julia = "1.10"
