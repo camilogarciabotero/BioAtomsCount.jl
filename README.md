@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <img src="docs/src/assets/logo.svg" height="150"><br/>
+  <img src="docs/src/assets/logo.svg" height="100"><br/>
   <i>Counting BioSequences' atoms </i><br/><br/>
 </div>
 
