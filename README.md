@@ -103,7 +103,7 @@ counts = countatoms(lambdaprotein)
 sum(counts, dims=1)
 
 1×5 Matrix{Int64}:
-#  C     H     N   O  S
+#  C     H    N    O  S
  895  1814  270  449  4
 ```
 
