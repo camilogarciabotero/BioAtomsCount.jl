@@ -2,7 +2,6 @@ module BioAtomsCountTests
 
 using BioAtomsCount
 using BioSequences
-using VectorizedKmers
 
 using Aqua
 using Test
