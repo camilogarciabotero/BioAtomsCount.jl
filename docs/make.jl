@@ -10,6 +10,7 @@ makedocs(;
     sitename = "BioAtomsCount.jl",
     format = Documenter.HTML(
         canonical="https://camilogarciabotero.github.io/BioAtomsCount.jl",
+        repolink = "https://github.com/camilogarciabotero/BioAtomsCount.jl"
     ),
     pages = [
         "Home" => "index.md",

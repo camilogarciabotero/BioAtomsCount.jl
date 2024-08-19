@@ -1,7 +1,44 @@
-```@meta
-CurrentModule = BioAtomsCount
+```@raw html
+
+<p align="center">
+  <img src="assets/logo.svg" height="150"><br/>
+  <i>Counting BioSequences' atoms.</i>
+</p>
 ```
 
+```@raw html
+
+<div style="text-align: center;">
+
+<a href="https://camilogarciabotero.github.io/BioAtomsCount.jl/dev/">
+  <img src="https://img.shields.io/badge/documentation-online-blue.svg?logo=Julia&logoColor=white" alt="Documentation">
+</a>
+<a href="https://github.com/camilogarciabotero/BioAtomsCount.jl/releases/latest">
+  <img src="https://img.shields.io/github/release/camilogarciabotero/BioAtomsCount.jl.svg" alt="Release">
+</a>
+<a href="https://doi.org/10.5281/zenodo.7519184">
+  <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.7519184.svg" alt="DOI">
+</a>
+<a href="https://github.com/camilogarciabotero/BioAtomsCount.jl/actions/workflows/CI.yml">
+<br>
+  <img src="https://github.com/camilogarciabotero/BioAtomsCount.jl/actions/workflows/CI.yml/badge.svg" alt="GitHub Actions">
+</a>
+<a href="https://github.com/camilogarciabotero/BioAtomsCount.jl/blob/main/LICENSE">
+  <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
+</a>
+<a href="https://www.repostatus.org/#wip">
+  <img src="https://www.repostatus.org/badges/latest/wip.svg" alt="Repo Status">
+</a>
+<a href="http://juliapkgstats.com/pkg/BioAtomsCount">
+  <img src="https://img.shields.io/badge/dynamic/json?url=http%3A%2F%2Fjuliapkgstats.com%2Fapi%2Fv1%2Fmonthly_downloads%2FBioAtomsCount&query=total_requests&suffix=%2Fmonth&label=Downloads" alt="Downloads">
+</a>
+<a href="https://github.com/JuliaTesting/Aqua.jl">
+  <img src="https://raw.githubusercontent.com/JuliaTesting/Aqua.jl/master/badge.svg" alt="Aqua QA">
+</a>
+
+</div>
+
+```
 # BioAtomsCount
 
 This is a *fast* and *lightweight* package that counts the number of atoms in a given `BioSequence` object. It was inspired by the [Biocost.jl](https://github.com/juanvillada/Biocost.jl/tree/main) package.
