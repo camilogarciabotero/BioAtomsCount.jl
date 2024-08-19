@@ -1,6 +1,8 @@
 module BioAtomsCountTests
 
-using BioSequences, BioAtomsCount
+using BioAtomsCount
+using BioSequences
+using VectorizedKmers
 
 using Aqua
 using Test
@@ -13,10 +15,12 @@ using JET
     using BioSequences, BioAtomsCount
     
     sorteddna = dna"ACGT"
+    sortedrna = rna"ACGU"
     sortedaa = aa"ARNDCQEGHILKMFPSTWYV"
 
-    @test countatoms(sorteddna) == BioAtomsCount.dnaweights
-    @test countatoms(sortedaa) == BioAtomsCount.aaweights
+    @test countatoms(sorteddna) == BioAtomsCount.DNAWEIGHTS
+    @test countatoms(sortedrna) == BioAtomsCount.RNAWEIGHTS
+    @test countatoms(sortedaa) == BioAtomsCount.AAWEIGHTS
 end # BioAtomsCount.jl tests
 
 @testitem "Code quality" begin
