@@ -1,7 +1,7 @@
 ```@raw html
 
 <p align="center">
-  <img src="assets/logo.svg" height="80"><br/>
+  <img src="assets/logo.svg" height="120"><br/>
   <i>Counting BioSequences' atoms.</i>
 </p>
 ```
