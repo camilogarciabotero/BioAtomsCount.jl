@@ -95,6 +95,18 @@ countatoms(lambdaprotein)
   50  110  10  20  0  # V (Val)
 ```
 
+Sometimes what is needed is the total number of each atom in the sequence. This can be achieved by a simple sum of the matrix:
+
+```julia
+counts = countatoms(lambdaprotein)
+
+sum(counts, dims=1)
+
+1×5 Matrix{Int64}:
+#  C     H     N   O  S
+ 895  1814  270  449  4
+```
+
 ## License
 
 MIT License
