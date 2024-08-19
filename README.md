@@ -1,5 +1,26 @@
 # BioAtomsCount
 
+
+<div align="center">
+  <img src="" height="150"><br/>
+  <i>Counting BioSequences' atoms </i><br/><br/>
+</div>
+
+<div align="center">
+
+[![Documentation](https://img.shields.io/badge/documentation-online-blue.svg?logo=Julia&logoColor=white)](https://camilogarciabotero.github.io/BioAtomsCount.jl/dev/)
+[![Latest Release](https://img.shields.io/github/release/camilogarciabotero/BioAtomsCount.jl.svg)](https://github.com/camilogarciabotero/BioAtomsCount.jl/releases/latest)
+[![DOI](https://zenodo.org/badge/665161607.svg)](https://zenodo.org/badge/latestdoi/665161607)
+<br/>
+[![CI Workflow](https://github.com/camilogarciabotero/BioAtomsCount.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/camilogarciabotero/BioAtomsCount.jl/actions/workflows/CI.yml)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/camilogarciabotero/BioAtomsCount.jl/blob/main/LICENSE)
+[![Work in Progress](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![Downloads](https://img.shields.io/badge/dynamic/json?url=http%3A%2F%2Fjuliapkgstats.com%2Fapi%2Fv1%2Fmonthly_downloads%2FBioAtomsCount&query=total_requests&suffix=%2Fmonth&label=Downloads)](http://juliapkgstats.com/pkg/BioAtomsCount)
+[![Aqua QA](https://raw.githubusercontent.com/JuliaTesting/Aqua.jl/master/badge.svg)](https://github.com/JuliaTesting/Aqua.jl)
+[![JET](https://img.shields.io/badge/%E2%9C%88%EF%B8%8F%20tested%20with%20-%20JET.jl%20-%20red)](https://github.com/aviatesk/JET.jl)
+
+</div>
+
 This is a *fast* and *lightweight* package that counts the number of atoms in a given `BioSequence` object. It was inspired by the [Biocost.jl](https://github.com/juanvillada/Biocost.jl/tree/main) package.
 
 ## Installation
