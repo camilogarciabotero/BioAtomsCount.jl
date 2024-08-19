@@ -2,7 +2,7 @@
 
 
 <div align="center">
-  <img src="" height="150"><br/>
+  <img src="docs/src/assets/logo.svg" height="150"><br/>
   <i>Counting BioSequences' atoms </i><br/><br/>
 </div>
 
@@ -43,7 +43,7 @@ pkg> add BioAtomsCount
 
 ## Usage
 
-The `BioAtomsCount` module exports a single function `countatoms` which takes a `BioSequence` object as input and returns a matrix of the count of atoms in the sequence. 
+The `BioAtomsCount` module exports a single function `countatoms` which takes a `BioSequence` object as input and returns a matrix of the count of atoms in the sequence.
 
 Each column of the matrix corresponds to a different atom (C, H, N, O) for DNA and (C, H, N, O, S) for proteins and each row corresponds to a different residue in the sequence.
 
