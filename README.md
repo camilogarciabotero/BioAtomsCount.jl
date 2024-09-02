@@ -10,7 +10,7 @@
 
 [![Documentation](https://img.shields.io/badge/documentation-online-blue.svg?logo=Julia&logoColor=white)](https://camilogarciabotero.github.io/BioAtomsCount.jl/dev/)
 [![Latest Release](https://img.shields.io/github/release/camilogarciabotero/BioAtomsCount.jl.svg)](https://github.com/camilogarciabotero/BioAtomsCount.jl/releases/latest)
-[![DOI](https://zenodo.org/badge/665161607.svg)](https://zenodo.org/badge/latestdoi/665161607)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13631113.svg)](https://doi.org/10.5281/zenodo.13631113)
 <br/>
 [![CI Workflow](https://github.com/camilogarciabotero/BioAtomsCount.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/camilogarciabotero/BioAtomsCount.jl/actions/workflows/CI.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/camilogarciabotero/BioAtomsCount.jl/blob/main/LICENSE)
