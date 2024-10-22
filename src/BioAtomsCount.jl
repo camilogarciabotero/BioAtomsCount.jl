@@ -59,7 +59,7 @@ function countatoms(seq::SeqOrView{<:NucleicAcidAlphabet{N}})::Matrix{Int64} whe
   counts = Vector{Int64}(undef, 4)
   weights, alphabet = eltype(seq) == DNA ? (DNAWEIGHTS, ACGT) : (RNAWEIGHTS, ACGU)
   @inbounds for i in 1:4
-    counts[i] = count(isequal(alphabet[i]), seq)
+    counts[i] = count(==(alphabet[i]), seq)
   end
   return weights .* counts
 end
@@ -67,7 +67,7 @@ end
 function countatoms(seq::SeqOrView{AminoAcidAlphabet})::Matrix{Int64}
   counts = Vector{Int64}(undef, 20)
   @inbounds for i in 1:20
-    counts[i] = count(isequal(AA20[i]), seq)
+    counts[i] = count(==(AA20[i]), seq)
   end
   return AAWEIGHTS .* counts
 end
