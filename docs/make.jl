@@ -1,4 +1,5 @@
 using Documenter
+using DocumenterVitepress
 using BioAtomsCount
 
 DocMeta.setdocmeta!(BioAtomsCount, :DocTestSetup, :(using BioAtomsCount); recursive = true)
@@ -8,7 +9,7 @@ makedocs(;
     authors = "Camilo García-Botero",
     repo = "https://github.com/camilogarciabotero/BioAtomsCount.jl",
     sitename = "BioAtomsCount.jl",
-    format = Documenter.HTML(
+    format = DocumenterVitepress.MarkdownVitepress(
         canonical="https://camilogarciabotero.github.io/BioAtomsCount.jl",
         repolink = "https://github.com/camilogarciabotero/BioAtomsCount.jl"
     ),
@@ -18,4 +19,4 @@ makedocs(;
     warnonly = true,
 )
 
-deploydocs(; repo = "https://github.com/camilogarciabotero/BioAtomsCount.jl", devbranch = "main")
+DocumenterVitepress.deploydocs(; repo = "https://github.com/camilogarciabotero/BioAtomsCount.jl", devbranch = "main")
