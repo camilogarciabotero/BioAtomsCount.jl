@@ -10,8 +10,8 @@ makedocs(;
     repo = "https://github.com/camilogarciabotero/BioAtomsCount.jl",
     sitename = "BioAtomsCount.jl",
     format = DocumenterVitepress.MarkdownVitepress(
+        repo = "https://github.com/camilogarciabotero/BioAtomsCount.jl"
         canonical="https://camilogarciabotero.github.io/BioAtomsCount.jl",
-        repolink = "https://github.com/camilogarciabotero/BioAtomsCount.jl"
     ),
     pages = [
         "Home" => "index.md",
