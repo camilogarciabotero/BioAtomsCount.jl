@@ -56,10 +56,6 @@ const AAWEIGHTS = [
 # end
 
 function countatoms(seq::SeqOrView{<:NucleicAcidAlphabet{N}})::Matrix{Int64} where {N}
-  # Validate input
-  if !(eltype(seq) == DNA || eltype(seq) == RNA)
-    error("Unsupported nucleic acid type: $(eltype(seq))")
-  end
   counts = Vector{Int64}(undef, 4)
   weights, alphabet = eltype(seq) == DNA ? (DNAWEIGHTS, ACGT) : (RNAWEIGHTS, ACGU)
   @inbounds for i in 1:4
