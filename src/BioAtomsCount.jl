@@ -49,13 +49,17 @@ const AAWEIGHTS = [
   5  11 1  2  0;  # V (Val)
 ]
 
-# function countatoms(seq::SeqOrView{A})::Matrix{Int64} where {A}
-#     atomweights, alph = eltype(seq) == DNA ? (dnaweights, ACGT) : (aaweights, AA20)
-#     counts = [count(x, seq) for x in isequal.(alph)]::Vector{Int64}
-#     return atomweights .* counts
-# end
+"""
+    countatoms(seq::SeqOrView{<:NucleicAcidAlphabet})
 
+Count the number of C, H, N, O atoms in a DNA or RNA sequence.
+Returns a matrix where each row corresponds to a base and columns to atom types.
+Throws an error if the sequence type is not DNA or RNA.
+"""
 function countatoms(seq::SeqOrView{<:NucleicAcidAlphabet{N}})::Matrix{Int64} where {N}
+  if !(eltype(seq) == DNA || eltype(seq) == RNA)
+    error("Unsupported nucleic acid type: $(eltype(seq)). Only DNA and RNA are supported.")
+  end
   counts = Vector{Int64}(undef, 4)
   weights, alphabet = eltype(seq) == DNA ? (DNAWEIGHTS, ACGT) : (RNAWEIGHTS, ACGU)
   @inbounds for i in 1:4
@@ -64,6 +68,12 @@ function countatoms(seq::SeqOrView{<:NucleicAcidAlphabet{N}})::Matrix{Int64} whe
   return weights .* counts
 end
 
+"""
+    countatoms(seq::SeqOrView{AminoAcidAlphabet})
+
+Count the number of C, H, N, O, S atoms in an amino acid sequence.
+Returns a matrix where each row corresponds to an amino acid and columns to atom types.
+"""
 function countatoms(seq::SeqOrView{AminoAcidAlphabet})::Matrix{Int64}
   counts = Vector{Int64}(undef, 20)
   @inbounds for i in 1:20
