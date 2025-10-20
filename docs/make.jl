@@ -7,7 +7,6 @@ DocMeta.setdocmeta!(BioAtomsCount, :DocTestSetup, :(using BioAtomsCount); recurs
 makedocs(;
     modules = [BioAtomsCount],
     authors = "Camilo García-Botero",
-    # repo = "https://github.com/camilogarciabotero/BioAtomsCount.jl",
     repo = Remotes.GitHub("camilogarciabotero", "BioAtomsCount.jl"),
     sitename = "BioAtomsCount.jl",
     format = DocumenterVitepress.MarkdownVitepress(
@@ -15,8 +14,8 @@ makedocs(;
     ),
     pages = [
         "Home" => "index.md",
-    ]
-    # warnonly = true,
+    ],
+    warnonly = [:missing_docs],
 )
 
 DocumenterVitepress.deploydocs(; 
