@@ -7,7 +7,7 @@ hero:
   text: "Counting atoms in biological sequences made easy"
   tagline:
   image:
-    src: /assets/logo.png
+    src: /logo.png
     alt: BioAtomsCount Logo
 
   actions:
