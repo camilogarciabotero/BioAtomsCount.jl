@@ -47,6 +47,8 @@ const AAWEIGHTS = [
   11 12 2  2  0;  # W (Trp)
   9  11 1  3  0;  # Y (Tyr)
   5  11 1  2  0;  # V (Val)
+  12 21 3  3  0;  # O (Pyl)
+  3  7  1  2  1;  # U (Sec)
 ]
 
 """
