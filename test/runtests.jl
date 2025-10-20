@@ -15,7 +15,7 @@ using JET
     
     sorteddna = dna"ACGT"
     sortedrna = rna"ACGU"
-    sortedaa = aa"ARNDCQEGHILKMFPSTWYV"
+    sortedaa = aa"ARNDCQEGHILKMFPSTWYVOU"
 
     @test countatoms(sorteddna) == BioAtomsCount.DNAWEIGHTS
     @test countatoms(sortedrna) == BioAtomsCount.RNAWEIGHTS
